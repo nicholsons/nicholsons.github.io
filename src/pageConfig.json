@@ -1,0 +1,82 @@
+{
+  "appName": "COMP0034 Web Development 2019/20",
+  "headerNavigation": [
+    {
+      "name": "COMP0034 Course Materials",
+      "path": "/comp0034"
+    }
+  ],
+  "landingPage": "/comp0034",
+  "topics": [
+    "news"
+  ],
+  "pages": [
+    {
+      "route": "/lecture",
+      "name": "COMP0034 Lecture materials",
+      "description": "This is the course content for COMP0034 Web Development",
+      "icon": "address-book",
+      "children": [
+        {
+          "route": "/lecture",
+          "name": "Course content",
+          "description": "Materials to support the lectures",
+          "icon": "chalkboard-teacher",
+          "topics": [
+            "lectures"
+          ],
+          "children": [
+            {
+              "route": "/introduction",
+              "name": "Course Introduction",
+              "description": "how to read the course documentation",
+              "icon": "chalkboard-teacher",
+              "topics": [
+                "lectures"
+              ],
+              "markdown": "/static/markdown/lectures/Introduction.md"
+            },
+            {
+              "route": "/newPagesHowto",
+              "name": "New Pages HowTo",
+              "description": "how to create new Pages on the playbook",
+              "icon": "chalkboard-teacher",
+              "topics": [
+                "lectures"
+              ],
+              "markdown": "/static/markdown/lectures/NewPagesHowto.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/exercises",
+      "name": "COMP0034 Exercises",
+      "description": "Lab exercises for COMP0034 Web Development",
+      "icon": "address-book",
+      "children": [
+        {
+          "route": "/exercises/0",
+          "name": "Exercises 0",
+          "description": "Software set-up",
+          "icon": "project-diagram",
+          "topics": [
+            "exercises"
+          ],
+          "markdown": "/static/markdown/exercises/exercises0.md"
+        },
+        {
+          "route": "/exercises/1",
+          "name": "Exercises 1",
+          "description": "Database",
+          "icon": "project-diagram",
+          "topics": [
+            "exercises"
+          ],
+          "markdown": "/static/markdown/process/exercises1.md"
+        }
+      ]
+    }
+  ]
+}

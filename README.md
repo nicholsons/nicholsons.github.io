@@ -1,37 +1,67 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/nicholsons/nicholsons.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## GIT Playbook
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+GIT Playbook is a documentation framework that allows you to create Documentation for your project using Markdown and GH-Pages rapidly. This is the repository for Medium article <a href="https://medium.com/@thomas.reinecke/create-compelling-documentation-with-github-pages-16e4149efe9e" target="_blank">Create compelling Documentation with Github Pages</a> by <a href="https://github.com/thomasreinecke" target="_blank">Thomas Reinecke</a> and <a href="https://github.com/kaiwedekind" target="_blank">Kai Wedekind</a>. 
 
-### Markdown
+![image](https://user-images.githubusercontent.com/35994116/45641683-75532e80-bab6-11e8-81a6-f31ad27f1bf4.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* <a href="https://thomasreinecke.github.io/git-playbook/#/playbook" target="_blank">Demo environment (on GH pages)</a>
+* <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a>
 
-```markdown
-Syntax highlighted code block
+## Main Features
+* Runs your Markdown-based documentation on a webapp
+* Mobile ready, responsive design
+* supports any level of document hierarchy
+* supports title, description & icon for every Folder & Document
+* Live Search/Filtering capability keyword and topic-based (no server infrastructure necessary for it)
+* All-In-One WebFrontend, only needs a webcontainer to run, optimized for deployment on GH Pages
+* Left-Sided Tree Navigator
+* Support for Multiple Playbooks in one app
+* Breadcrumb Support to navigate through any level of the document hierarchy easily
+* Topic Support to group documents together
 
-# Header 1
-## Header 2
-### Header 3
+## How to use it
+* get started by reading the article <a href="https://medium.com/@thomas.reinecke/create-compelling-documentation-with-github-pages-16e4149efe9e" target="_blank">Create compelling Documentation with Github Pages</a>
+* clone repository and follow the "Build Setup" instructions below
+* edit "src/pageConfig.json" and change the document structure as you desire
+* write your documents in Markdown and put them into the "static" folder
+* create yourself a GIT repository and import your playbook trunk
+* deploy it with `npm run gh-pages`
+* in your GH repository > Settings > scroll down to "Github Pages", make sure it points to your "gh-pages" branch
+* find the link to your GH page deployment on that screen aswell
+  ![image](https://user-images.githubusercontent.com/35994116/45642352-36be7380-bab8-11e8-95d5-a014c0422f63.png)
+* for feedback, enhancement requests or defect reports use "Issues" here on this repo
 
-- Bulleted
-- List
+Enjoy!
 
-1. Numbered
-2. List
+## Build Setup
 
-**Bold** and _Italic_ and `Code` text
+``` bash
+# install dependencies
+npm install
 
-[Link](url) and ![Image](src)
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification, also build the search index
+npm run build
+
+# build the search index only
+npm run build-search
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
+
+# deploy playbook to GH pages (includes build and deploy to GH pages)
+npm run gh-pages
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nicholsons/nicholsons.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
